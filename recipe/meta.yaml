@@ -1,4 +1,4 @@
-{% set version = "7.1.0" %}
+{% set version = "8.0.1" %}
 {% set ver = version.replace(".", "_") %}
 
 package:
@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  git_url: git://git.code.sf.net/p/esmf/esmf
-  git_tag: ESMF_7_1_0r
+  git_url: https://github.com/esmf-org/esmf.git
+  git_tag: ESMF_8_0_1
 
 build:
-  number: 1008
+  number: 1010
   skip: True  # [win]
 
 requirements:
