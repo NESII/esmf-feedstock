@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 {% set version = "8.0.1" %}
-=======
-{% set version = "8.0.0" %}
->>>>>>> 74948e325f11026517a9f9e6631e2233117831c4
 {% set ver = version.replace(".", "_") %}
-{% set build = 7 %}
+{% set build = 8 %}
 
 # ensure mpi is defined (needed for conda-smithy recipe-lint)
 {% set mpi = mpi or 'nompi' %}
@@ -19,19 +15,11 @@ package:
   version: {{ version }}
 
 source:
-<<<<<<< HEAD
-  git_url: https://github.com/esmf-org/esmf.git
-  git_tag: ESMF_8_0_1
-
-build:
-  number: 1010
-=======
   url: http://www.earthsystemmodeling.org/esmf_releases/public/ESMF_{{ ver }}/esmf_{{ ver }}_src.tar.gz
   sha256: 75c34c41806e703551b6b79566edf34c23f1eebcf821749e5320e860e565d94f
 
 build:
-  number: {{ build }}
->>>>>>> 74948e325f11026517a9f9e6631e2233117831c4
+  number: 1010
   skip: True  # [win]
 
   # add build string so packages can depend on
