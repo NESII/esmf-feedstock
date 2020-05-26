@@ -17,7 +17,11 @@ bld.bat text eol=crlf
 .gitattributes linguist-generated=true
 .gitignore linguist-generated=true
 .travis.yml linguist-generated=true
+<<<<<<< HEAD
 .scripts/* linguist-generated=true
+=======
+.scripts linguist-generated=true
+>>>>>>> 74948e325f11026517a9f9e6631e2233117831c4
 LICENSE.txt linguist-generated=true
 README.md linguist-generated=true
 azure-pipelines.yml linguist-generated=true
